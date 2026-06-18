@@ -12,15 +12,3 @@ It routes traffic, evaluates LLM responses asynchronously using an LLM-as-a-judg
 * **The "Kill Switch":** Continuously calculates rolling average quality scores and auto-locks flags at 0% rollout if the model begins hallucinating.
 * **Real-Time Dashboard (Streamlit):** Visualizes active rollouts, quality scores over time, and automatic rollback events.
 * **Infrastructure:** Fully containerized with Docker, backed by PostgreSQL and Redis.
-
-## 🚀 Quick Start (1-Click Deploy)
-
-Ensure Docker is installed and running on your machine.
-
-```bash
-# Clone the repository
-git clone [https://github.com/glitchy-abhishek/ai-feature-flags.git](https://github.com/glitchy-abhishek/ai-feature-flags.git)
-cd ai-feature-flags
-
-# Spin up the entire infrastructure (DB, API, UI)
-docker-compose up --build -d
